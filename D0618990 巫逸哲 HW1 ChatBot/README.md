@@ -2,9 +2,9 @@
 
 ## 請觀察 http://www.fcu.edu.tw 網頁，並自選主題做成 ChatBot
 
-1.繳交程式檔案，程式碼要註解
-2.word 檔案，需包含 Dialogflow 的intent 與 實作心得
-3.操作流程影片(youtube) ，貼到作業分享區
+1. 繳交程式檔案，程式碼要註解
+2. word 檔案，需包含 Dialogflow 的intent 與 實作心得
+3. 操作流程影片(youtube) ，貼到作業分享區
 
 ## 可以參考以下主題
 
