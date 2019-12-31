@@ -78,6 +78,25 @@ def WriteNewCsv(segment_ordered):
             
             for i,ele in enumerate(Data_List):
                 writer.writerow([ele[0], ele[1], ele[2], ele[3], ele[4], Key_List[i]])
+def Get_segment_ordered():
+    Title = Load()
+    segment_ordered = Jieba_Analysis(Title)
+    Combine_segment_ordered = []
+    temp = []
+    with open("諮商輔導中心.csv","r",encoding="utf-8") as csvfile:
+        Data_List = csv.reader(csvfile, delimiter=',')
+        for i,ele in enumerate(Data_List):
+
+            if i != 0:
+                temp = ele
+                temp.append(segment_ordered[i-1])
+                #print(temp)
+
+                Combine_segment_ordered.append(temp)
+                
+    csvfile.close
+
+    return Combine_segment_ordered
 
 Title = Load()
 segment_ordered = Jieba_Analysis(Title)
