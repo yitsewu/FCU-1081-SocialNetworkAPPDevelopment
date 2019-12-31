@@ -98,6 +98,3 @@ def Get_segment_ordered():
 
     return Combine_segment_ordered
 
-Title = Load()
-segment_ordered = Jieba_Analysis(Title)
-WriteNewCsv(segment_ordered)
